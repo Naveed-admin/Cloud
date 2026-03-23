@@ -1,0 +1,20 @@
+>>> Installing AWSCLI on ubuntu 24 
+
+$ sudo apt update
+$ sudo snap install aws-cli --classic
+$ aws help
+
+
+>>> Stress command for CPU load
+
+$ sudo apt update
+$ sudo apt install stress -y
+$ stress --cpu $(nproc) --timeout 600
+
+
+>>> Load for continuous monitoring
+
+$ sudo apt update && sudo apt install -y stress-ng sysstat iotop iftop
+$ stress-ng --version
+$ nohup stress-ng --cpu 0 --cpu-load 70 --vm 0 --vm-bytes 60% --io 2 --hdd 2 --hdd-bytes 1G --timeout 0 >/tmp/stress-ng.out 2>&1 & echo $! > /tmp/stress.pid
+$ top 
