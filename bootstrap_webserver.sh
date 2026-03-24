@@ -88,4 +88,4 @@ echo ""
 echo "Useful commands:"
 echo "  - Start:   sudo systemctl start apache2"
 echo "  - Stop:    sudo systemctl stop apache2"
-echo "  - Restart: sudo systemctl restart apache2
+echo "  - Restart: sudo systemctl restart apache2"
