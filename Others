@@ -5,6 +5,19 @@ $ sudo snap install aws-cli --classic
 $ aws help
 
 
+>>> Installing AWSCLI on ubuntu 22
+$ sudo apt update
+$ sudo apt install awscli -y
+$ aws help
+$ q
+
+Create IAM role and and link EC2 with S3 and attach it to EC2.
+$ aws s3 ls
+$ aws s3 ls s3://bucket.ja26
+$ aws s3 cp abc s3://bucket.ja26/
+$ aws s3 rm s3://bucket.ja26/abc
+
+
 >>> Stress command for CPU load
 
 $ sudo apt update
